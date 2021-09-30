@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "java",
+    "HOSTNAME_PEGA": "https://zu-apiclaims.zsbrasil.com",
+    "MOCK": "https://ef905dd4-acc4-4838-80da-0bfe34701a42.mock.pstmn.io"
+  }
+}
