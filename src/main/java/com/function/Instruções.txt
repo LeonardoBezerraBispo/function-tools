@@ -1,0 +1,41 @@
+1. Abra a aba JAVA PROJECTS
+2. Vá até Maven Dependencies e clique no botão + ao lado
+3. Pesquisar org.everit.json.schema
+4. Clicar em cima
+5. Repetir processo, porém pesquisando por  com.github.java-json-tools
+
+Pré-requisitos:
+
+- Documentação aberta (anexo) no https://editor.swagger.io/
+- Funções abertas no Visual Code
+- Postman aberto
+
+Como fazer a validação?
+
+-Instancie a classe
+-Use o metódo "Validate"
+-Trate a exceção
+
+Como transformar o json em schema?
+
+1 - Abrir documentação (anexo) no Swagger Editor (https://editor.swagger.io/)
+2 - Procurar serviço desejado
+3 - Pegar o example do response 200 (é um json)
+4 - Copiar e levar pro site de transformação (https://jsonschema.net/home)
+5 - Colar no lado esquerdo
+6 - Clicar em Settings
+7 - Colocar as seguintes configurações: Draft-04, em "Keyword Visibility" deixar apenas marcadas as opções: Title, Description e Type (Neste caso, não utilizaremos a "Required", mas em outros casos iremos) e em "Array Validation" deixar em "First"
+8 - Clicar em "Save", depois em "Submit"
+9 - Na direita sairá o resultado com o Schema pronto para uso
+
+Onde eu uso o Schema?
+
+Você criará um arquivo .json no diretório resources, com o nome da function, e esse arquivo vai ser o que recebe esse Schema dentro dele. E é esse arquivo que você indicará o nome na função relativa a ele
+
+O que eu faço no Postman?
+
+Esse mesmo Json que você utilizou para transformação, é o mesmo que você vai passar no request da função
+
+Como passo body no request do Postman?
+
+Clique em body, selecione "raw" e terá em laranja do lado escrito "text", clique e mude para JSON.

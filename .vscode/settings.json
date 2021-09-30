@@ -1,0 +1,9 @@
+{
+    "azureFunctions.deploySubpath": "target/azure-functions/azure-function-sinistros-pega",
+    "azureFunctions.projectLanguage": "Java",
+    "azureFunctions.projectRuntime": "~3",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "package",
+    "spring-boot.ls.checkJVM": false,
+    "java.configuration.updateBuildConfiguration": "automatic"
+}
